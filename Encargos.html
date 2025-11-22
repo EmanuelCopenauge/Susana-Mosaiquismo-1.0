@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encargá tu Mosaico Personalizado | Mosaiquismo Susana</title>
+  <meta name="description" content="Solicitá un mosaico artesanal hecho a medida. Inspirate en trabajos anteriores y encargá tu diseño exclusivo.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ========== HEADER (igual que en el resto del sitio) ========== -->
+  <header>
+    <div class="header-container">
+      <a href="index.html"><img src="imagenes/Logo.JPEG" alt="Logo Mosaiquismo Susana" class="logo"></a>
+      <h1 class="titulo-sitio">Mosaiquismo Susana</h1>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="encargos.html" class="activo">Encargos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="encargos-container">
+    <section class="intro">
+      <h2>Encargá tu Mosaico Personalizado</h2>
+      <p>¿Querés una pieza exclusiva hecha a mano? Inspirate en los trabajos anteriores de Susana y encargá tu propio diseño artesanal. Cada creación es única, cuidada en cada detalle y pensada para reflejar tu estilo.</p>
+    </section>
+
+    <!-- GALERÍA DE REFERENCIAS -->
+    <section class="referencias">
+      <h3>Inspirate con estos diseños</h3>
+      <div class="grid-referencias">
+        <div class="ref-item"><img src="imagenes/ARBOL.JPEG" alt="Mosaico Floral"></div>
+        <div class="ref-item"><img src="imagenes/BANDEJA.JPEG" alt="Mosaico Moderno"></div>
+        <div class="ref-item"><img src="imagenes/MESA.JPEG" alt="Mosaico Abstracto"></div>
+        <div class="ref-item"><img src="imagenes/FUENTE.JPEG" alt="Mosaico Fuente Decorativa"></div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE ENCARGO -->
+    <section class="formulario-encargo">
+      <h3>Contanos tu idea</h3>
+      <form id="formEncargo" enctype="multipart/form-data" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo <span>*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Laura González" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo de mosaico <span>*</span></label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Seleccioná una opción</option>
+            <option value="cuadro">Cuadro decorativo</option>
+            <option value="mesa">Mesa</option>
+            <option value="bandeja">Bandeja</option>
+            <option value="mural">Mural</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripción del pedido</label>
+          <textarea id="descripcion" name="descripcion" rows="5" placeholder="Contanos qué tipo de diseño te gustaría, colores o estilo."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="referencia">Imagen de referencia (opcional)</label>
+          <input type="file" id="referencia" name="referencia" accept="image/*">
+        </div>
+
+        <div class="form-group">
+          <label for="plazo">¿Para cuándo lo necesitás?</label>
+          <input type="date" id="plazo" name="plazo">
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </div>
+      </form>
+
+      <p class="mensaje-info">💡 Todos los encargos son revisados personalmente por Susana. Te contactaremos por correo para confirmar los detalles.</p>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <section class="info">
+      <p>&copy; 2025 Susana Mosaiquismo. Todos los derechos reservados.</p>
+    </section>
+    <h4>Seguinos en las redes</h4>
+    <ul class="redes">
+      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://wa.me/" target="_blank">WhatsApp</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/encargos.js"></script>
+</body>
+</html>
